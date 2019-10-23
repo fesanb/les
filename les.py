@@ -2,10 +2,10 @@
 import time
 import board
 import busio
-import adafruit_ccs811
+import Adafruit_CCS811
 
 i2c = busio.I2C(board.SCL, board.SDA)
-ccs811 = adafruit_ccs811.CCS811(i2c)
+ccs811 = Adafruit_CCS811.CCS811(i2c)
 
 # Wait for the sensor to be ready
 while not ccs811.data_ready:
