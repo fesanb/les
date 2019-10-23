@@ -5,7 +5,7 @@ import Adafruit_CCS811
 from board import *
 i2c_bus = busio.I2C(SCL, SDA)
 
-ccs = Adafruit_CCS811.CCS811(i2c_bus)
+ccs = Adafruit_CCS811.ccs811(i2c_bus)
 
 print(ccs.eco2)
 print(ccs.tvoc)
